@@ -4,6 +4,8 @@ import { paths } from '../paths';
 import SectionSelector from '../../components/SectionSelector';
 import Home from '../../components/HomeSection';
 import Planets from '../../components/PlanetsSection';
+import People from '../../components/PeopleSection';
+
 
 const MainContainer = () => {
   const location = useLocation();
@@ -47,6 +49,7 @@ const MainContainer = () => {
         <Route path={paths.people.href}>
           <div className="p-3">
             <p className="font-bold text-xl"># TODO</p>
+            <People />
             <p>
               Agregar tabla con los personajes sacados de la API. Mostrar para
               cada persona: name, birth_year, height (en metros), cantidad de
